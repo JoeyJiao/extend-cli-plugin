@@ -5,4 +5,5 @@
   Extend CLI commands
   Available commands are:
   get-job-parameter job parameter
+  get-job-parameters job
 </div>

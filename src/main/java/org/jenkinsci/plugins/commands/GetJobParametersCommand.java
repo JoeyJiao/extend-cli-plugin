@@ -10,7 +10,7 @@ import org.kohsuke.args4j.Argument;
 
 @Extension
 public class GetJobParametersCommand extends CLICommand{
-	@Argument(metaVar = "JOB", usage = "Name of the job", required = true)
+	@Argument(metaVar = "JOB", usage = "Name of the Job", required = true)
 	public AbstractProject<?,?> job;
 
 	@Override
@@ -29,7 +29,7 @@ public class GetJobParametersCommand extends CLICommand{
 				}
 			}
 		} catch (NullPointerException e) {
-			stderr.println("No parameters");
+			stderr.println(Messages.GetJobParametersCommand_NoParameters());
 			return 1;
 		}
 		return 0;  //To change body of implemented methods use File | Settings | File Templates.
