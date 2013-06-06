@@ -1,0 +1,8 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Extend CLI commands
+  Available commands are:
+  get-job-parameter job parameter
+</div>
